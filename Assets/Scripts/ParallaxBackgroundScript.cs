@@ -25,6 +25,7 @@ public class ParallaxBackgroundScript : MonoBehaviour
         {
             var image = new GameObject($"Image {i}");
             image.transform.parent = transform;
+            image.transform.localPosition = Vector3.zero;
             var sprite = image.AddComponent<SpriteRenderer>();
             sprite.sprite = _baseImage.sprite;
 
